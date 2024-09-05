@@ -31,6 +31,7 @@ class _HomePageState extends State<HomePage> {
               padding: EdgeInsets.all(8),
               child: Text(
                 'Contact Form',
+                textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
             ),

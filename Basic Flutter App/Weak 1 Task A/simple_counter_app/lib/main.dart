@@ -14,6 +14,19 @@ class CounterApp extends StatefulWidget {
 class _CounterAppState extends State<CounterApp> {
   int counter = 0;
 
+  customButton({required Icon icon, required VoidCallback? onPressed}) {
+    return SizedBox(
+      width: 90,
+      height: 90,
+      child: FloatingActionButton(
+        backgroundColor: const Color.fromARGB(255, 230, 232, 235),
+        onPressed: onPressed,
+        elevation: 0,
+        child: icon,
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -65,19 +78,6 @@ class _CounterAppState extends State<CounterApp> {
             ],
           ),
         ),
-      ),
-    );
-  }
-
-  customButton({required Icon icon, required VoidCallback? onPressed}) {
-    return SizedBox(
-      width: 90,
-      height: 90,
-      child: FloatingActionButton(
-        backgroundColor: const Color.fromARGB(255, 230, 232, 235),
-        onPressed: onPressed,
-        elevation: 0,
-        child: icon,
       ),
     );
   }

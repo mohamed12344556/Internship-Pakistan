@@ -24,7 +24,7 @@ class customDialogAlert extends StatelessWidget {
             text: "Enter the category name",
             userController: categoryControllerName,
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           CustomTextFormField(
             text: "Enter the category subtitle",
             userController: categoryControllerSubTitle,

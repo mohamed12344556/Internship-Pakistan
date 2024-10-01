@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:to_do_app/core/themes/colors.dart';
-import 'package:to_do_app/models/todo_model.dart'; // Import ToDoModel
+import 'package:to_do_app/models/todo_model.dart'; 
 import 'package:to_do_app/views/home_view.dart';
 import 'package:to_do_app/views/task_details_view.dart';
 
 void main() {
   runApp(const ToDoList());
-}
+} 
 
 class ToDoList extends StatelessWidget {
   const ToDoList({super.key});

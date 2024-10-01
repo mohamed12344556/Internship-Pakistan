@@ -5,7 +5,7 @@ class ScorePage extends StatelessWidget {
   final int score;
   final int totalQuestions;
 
-  ScorePage({required this.score, required this.totalQuestions});
+  const ScorePage({super.key, required this.score, required this.totalQuestions});
 
   @override
   Widget build(BuildContext context) {

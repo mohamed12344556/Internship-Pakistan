@@ -144,7 +144,8 @@ class _AddToDoViewState extends State<AddToDoView> {
           borderRadius: BorderRadius.circular(12),
         ),
         backgroundColor: ColorsManager.mainWhite,
-        padding: const EdgeInsets.symmetric(vertical: 16),
+        padding: EdgeInsets.only(
+            top: 12, bottom: MediaQuery.of(context).viewInsets.bottom),
         textStyle: const TextStyle(fontSize: 16),
       ),
       child: Text(

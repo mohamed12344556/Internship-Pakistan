@@ -15,7 +15,6 @@ class RecipeDetailPage extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.share),
             onPressed: () {
-              // قم بإضافة وظيفة المشاركة هنا
             },
           ),
         ],

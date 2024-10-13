@@ -13,13 +13,12 @@ class Recipe {
     required this.image,
   });
 
- 
   Map<String, dynamic> toMap() {
     return {
       'name': name,
       'ingredients': ingredients.join(','),
       'steps': steps.join(','),
-      'image': image, 
+      'image': image,
     };
   }
 

@@ -11,7 +11,7 @@ class AddRecipePage extends StatefulWidget {
   const AddRecipePage({super.key, required this.onSave});
 
   @override
-  _AddRecipePageState createState() => _AddRecipePageState();
+  State<StatefulWidget> createState() => _AddRecipePageState();
 }
 
 class _AddRecipePageState extends State<AddRecipePage> {
@@ -39,7 +39,6 @@ class _AddRecipePageState extends State<AddRecipePage> {
           key: _formKey,
           child: ListView(
             children: [
-              // بطاقة اسم الوصفة
               Card(
                 elevation: 3,
                 margin: const EdgeInsets.symmetric(vertical: 8.0),
@@ -61,7 +60,6 @@ class _AddRecipePageState extends State<AddRecipePage> {
                 ),
               ),
 
-              // حقل إضافة المكونات
               Card(
                 elevation: 3,
                 margin: const EdgeInsets.symmetric(vertical: 8.0),
@@ -114,7 +112,6 @@ class _AddRecipePageState extends State<AddRecipePage> {
                 ),
               ),
 
-              // حقل إضافة الخطوات
               Card(
                 elevation: 3,
                 margin: const EdgeInsets.symmetric(vertical: 8.0),
@@ -167,7 +164,6 @@ class _AddRecipePageState extends State<AddRecipePage> {
                 ),
               ),
 
-              // عرض الصورة
               Card(
                 elevation: 3,
                 margin: const EdgeInsets.symmetric(vertical: 8.0),

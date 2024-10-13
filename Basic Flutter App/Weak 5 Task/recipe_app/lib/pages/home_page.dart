@@ -58,10 +58,10 @@ class _HomePageState extends State<HomePage> {
             final recipes = snapshot.data!;
             return GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2, // عدد الأعمدة في الشبكة
-                crossAxisSpacing: 10, // المسافة الأفقية بين العناصر
-                mainAxisSpacing: 10, // المسافة الرأسية بين العناصر
-                childAspectRatio: 3 / 4, // النسبة بين العرض والارتفاع لكل عنصر
+                crossAxisCount: 2,
+                crossAxisSpacing: 10,
+                mainAxisSpacing: 10,
+                childAspectRatio: 3 / 4,
               ),
               padding: const EdgeInsets.all(10),
               itemCount: recipes.length,
